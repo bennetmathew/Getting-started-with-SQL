@@ -11,7 +11,9 @@ SELECT
 	COALESCE(preferred_first_name, first_name) AS REPORTING_NAME
 FROM
 	PERSON
-~~~	
+~~~
+![alt text](https://github.com/bennetmathew/Getting-started-with-SQL/blob/master/output/1.PNG)
+	
 
 2. Write a query to select all rows from person that have a NULL occupation.
 ~~~sql
@@ -22,6 +24,8 @@ FROM
 WHERE
 	occupation IS NULL
 ~~~
+![alt text](https://github.com/bennetmathew/Getting-started-with-SQL/blob/master/output/2.PNG)
+
 
 3. Write a query to select all rows from person that have a date_of_birth before August 7th, 1990.
 ~~~sql
@@ -32,6 +36,8 @@ FROM
 WHERE
 	date_of_birth < '1990-08-07'
 ~~~
+![alt text](https://github.com/bennetmathew/Getting-started-with-SQL/blob/master/output/3.PNG)
+
 
 4. Write a query to select all rows from person that have a hire_date in the past 100 days.
 ~~~sql
@@ -42,6 +48,9 @@ FROM
 WHERE
 	hire_date BETWEEN DATEADD(DAY, -100, GETDATE()) AND GETDATE()
 ~~~
+![alt text](https://github.com/bennetmathew/Getting-started-with-SQL/blob/master/output/4.PNG)
+
+
 
 5. Write a query to select rows from person that also have a row in address with address_type = 'HOME'.
 ~~~sql
@@ -56,6 +65,8 @@ ON
 WHERE
 	A.address_type = 'HOME'
 ~~~
+![alt text](https://github.com/bennetmathew/Getting-started-with-SQL/blob/master/output/5.PNG)
+
 
 6. Write a query to select all rows from person and only those rows from address that have a matching billing address (address_type = 'BILL'). If a matching billing address does not exist, display 'NONE' in the address_type column.
 ~~~sql
@@ -70,6 +81,8 @@ ON
 	A.person_id = P.person_id AND
 	A.address_type = 'BILL'
 ~~~
+![alt text](https://github.com/bennetmathew/Getting-started-with-SQL/blob/master/output/6.PNG)
+
 
 7. Write a query to count the number of addresses per address type.
 ~~~sql
@@ -81,6 +94,8 @@ FROM
 GROUP BY
 	address_type
 ~~~
+![alt text](https://github.com/bennetmathew/Getting-started-with-SQL/blob/master/output/7.PNG)
+
 
 8. Write a query to select data in the following format:
 ~~~sql
@@ -103,6 +118,8 @@ ON
 GROUP BY
 	A.person_id, P.last_name
 ~~~
+![alt text](https://github.com/bennetmathew/Getting-started-with-SQL/blob/master/output/8.PNG)
+
 
 9. Write a query to update the person.occupation column to ‘X’ for all rows that have a ‘BILL’ address in the address table.
 ~~~sql
