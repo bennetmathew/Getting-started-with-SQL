@@ -1,7 +1,7 @@
 # Tables
-	**PERSON**\
+**PERSON**\
 	![alt text](https://github.com/bennetmathew/Getting-started-with-SQL/blob/master/tables/PERSON.PNG)\
-	**ADDRESS**\
+**ADDRESS**\
 	![alt text](https://github.com/bennetmathew/Getting-started-with-SQL/blob/master/tables/ADDRESS.PNG)
 
 # Queries
