@@ -1,3 +1,6 @@
+-   [Tables](#tables)
+-   [Queries](#queries)
+
 # Tables
 **PERSON**\
 	![alt text](https://github.com/bennetmathew/Getting-started-with-SQL/blob/master/tables/PERSON.PNG)\
