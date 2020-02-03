@@ -129,8 +129,8 @@ SET
 	occupation = 'X'
 WHERE
 	person_id IN (SELECT
-					  person_id
-				  FROM
-					  ADDRESS
-				  WHERE
-					address_type = 'BILL')
+			person_id
+		      FROM
+			ADDRESS
+		      WHERE
+			address_type = 'BILL')
